@@ -9,8 +9,8 @@ spring:
     config:
       server:
         git:
-          uri: #git仓库地址
-          search-paths: #配置仓库路径
+          uri: https://github.com/ZetiG/SpringConfig/ #git仓库地址
+          search-paths: SpringConfig #配置仓库路径
           username: #公开仓库不需要账号密码
           password:
       label: master #分支
