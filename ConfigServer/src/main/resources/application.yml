@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: #git仓库地址
+          search-paths: #配置仓库路径
+          username: #公开仓库不需要账号密码
+          password:
+      label: master #分支
