@@ -12,6 +12,6 @@ public class ConfigTestController {
 
     @RequestMapping("/hi")
     public String test() {
-        return foo;
+        return this.foo;
     }
 }

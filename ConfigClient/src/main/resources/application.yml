@@ -1,0 +1,19 @@
+server:
+  port: 8881
+
+spring:
+  application:
+    name: config-client
+
+  #仓库中的配置文件名会被转换成web接口,访问方式如下:
+  #  -/{application}-{profile}.yml
+  #  -/{label}/{application}-{profile}.yml
+  #  -/{application}-{profile}.properties
+  #  -/{label}/{application}-{profile}.properties
+  #  -/{application}/{profile}[/{label}]
+  cloud:
+    config:
+      label: master
+      profile: dev #dev/test/pro  #配置文件名的{profile}部分
+      uri: http://localhost:8888/ #指定配置服务中心地址
+      name: config-client #读取的配置文件名的{application}部分
