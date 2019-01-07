@@ -17,3 +17,8 @@ spring:
       profile: dev #dev/test/pro  #配置文件名的{profile}部分
       uri: http://localhost:8888/ #指定配置服务中心地址
       name: config-client #读取的配置文件名的{application}部分
+
+#SpringBoot 1.5.X 以上默认开通了安全认证
+management:
+  security:
+    enabled: false

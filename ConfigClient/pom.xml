@@ -31,6 +31,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- “refresh” 依赖,监控程序运行时状态-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-start-actuator</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
